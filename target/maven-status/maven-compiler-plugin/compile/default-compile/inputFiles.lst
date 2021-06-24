@@ -1,0 +1,16 @@
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\repositories\CategoryRepository.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\exception\RecipeNotFoundException.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\model\Category.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\model\Recipe.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\repositories\RecipeRepository.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\model\Difficulty.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\model\Notes.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\RecipeappApplication.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\config\SpringFoxConfig.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\services\RecipeService.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\config\WebConfig.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\controller\RecipeController.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\model\Ingredient.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\services\RecipeServiceImpl.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\model\UnitOfMeasure.java
+C:\own-projects\apps\recipe-app\01-backend\src\main\java\com\shabloel\recipeapp\repositories\UnitOfMeasureRepository.java

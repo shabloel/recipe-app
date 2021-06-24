@@ -1,0 +1,5 @@
+com\shabloel\recipeapp\services\services.class
+com\shabloel\recipeapp\RecipeappApplicationTests.class
+com\shabloel\recipeapp\model\model.class
+com\shabloel\recipeapp\repositories\repositories.class
+com\shabloel\recipeapp\controllers\IndexControllerTest.class

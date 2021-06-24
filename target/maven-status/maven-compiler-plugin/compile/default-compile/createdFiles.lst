@@ -1,0 +1,16 @@
+com\shabloel\recipeapp\model\Ingredient.class
+com\shabloel\recipeapp\repositories\UnitOfMeasureRepository.class
+com\shabloel\recipeapp\model\Recipe.class
+com\shabloel\recipeapp\repositories\RecipeRepository.class
+com\shabloel\recipeapp\model\Difficulty.class
+com\shabloel\recipeapp\RecipeappApplication.class
+com\shabloel\recipeapp\model\UnitOfMeasure.class
+com\shabloel\recipeapp\config\WebConfig.class
+com\shabloel\recipeapp\repositories\CategoryRepository.class
+com\shabloel\recipeapp\services\RecipeService.class
+com\shabloel\recipeapp\controller\RecipeController.class
+com\shabloel\recipeapp\model\Notes.class
+com\shabloel\recipeapp\services\RecipeServiceImpl.class
+com\shabloel\recipeapp\exception\RecipeNotFoundException.class
+com\shabloel\recipeapp\model\Category.class
+com\shabloel\recipeapp\config\SpringFoxConfig.class
