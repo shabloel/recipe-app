@@ -12,7 +12,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @since :  23-6-2021, wo
  **/
 @Configuration
-@EnableWebMvc
 public class WebConfig implements WebMvcConfigurer {
 
     @Value("/api")
@@ -23,8 +22,8 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/*")
-                .allowedOrigins("*")
+        registry.addMapping(basePath + "/*")
+                .allowedOrigins(theAllowedOrigins)
                 .allowedMethods("*");
     }
 
