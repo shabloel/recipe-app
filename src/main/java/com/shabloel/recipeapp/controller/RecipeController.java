@@ -4,10 +4,7 @@ import com.shabloel.recipeapp.model.Recipe;
 import com.shabloel.recipeapp.services.RecipeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
 
@@ -32,4 +29,16 @@ public class RecipeController {
         log.debug("Getting Index page");
         return recipeSer.getRecipes();
     }
+
+    @PostMapping("/newrecipe")
+    public void saveRecipe(@RequestBody  Recipe recipe){
+        recipeSer.addNewRecipe(recipe);
+    }
+
+    @DeleteMapping("{recipeId}")
+    public void deleteRecipe(@PathVariable("recipeId") Long id){
+        log.debug("deleted Recipe with id " + id);
+        recipeSer.deleteRecipe(id);
+    }
+
 }
