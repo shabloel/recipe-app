@@ -11,12 +11,12 @@ import javax.persistence.*;
 @Data
 @EqualsAndHashCode(exclude = {"recipe"})
 @Entity
-@Table(name="notes")
+@Table(name = "notes")
 public class Notes {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="notes_id")
+    @Column(name = "notes_id")
     private Long id;
 
     @OneToOne
@@ -24,7 +24,7 @@ public class Notes {
     private Recipe recipe;
 
     @Lob // standard db only allows 255 characters, this anno expands this by using clob field in the db
-    @Column(name="recipe_notes")
+    @Column(name = "recipe_notes")
     private String recipeNotes;
 
 }

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  **/
 @ResponseStatus(HttpStatus.NOT_FOUND)
 public class RecipeNotFoundException extends RuntimeException {
-    public RecipeNotFoundException(String msg){
+    public RecipeNotFoundException(String msg) {
         super(msg);
     }
 }

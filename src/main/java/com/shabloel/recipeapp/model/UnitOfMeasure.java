@@ -9,7 +9,7 @@ import javax.persistence.*;
  */
 @Data
 @Entity
-@Table(name="Unit_Of_Measure")
+@Table(name = "Unit_Of_Measure")
 public class UnitOfMeasure {
 
     @Id
@@ -17,7 +17,7 @@ public class UnitOfMeasure {
     @Column(name = "uom_id")
     private Long id;
 
-    @Column(name="description")
+    @Column(name = "description")
     private String description;
 
     @OneToOne

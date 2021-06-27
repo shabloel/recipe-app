@@ -25,18 +25,18 @@ public class RecipeController {
     }
 
     @GetMapping({"", "/", "/index", "/recipes"})
-    public Set<Recipe> getRecipes(){
+    public Set<Recipe> getRecipes() {
         log.debug("Getting Index page");
         return recipeSer.getRecipes();
     }
 
     @PostMapping("/newrecipe")
-    public void saveRecipe(@RequestBody  Recipe recipe){
+    public void saveRecipe(@RequestBody Recipe recipe) {
         recipeSer.addNewRecipe(recipe);
     }
 
     @DeleteMapping("{recipeId}")
-    public void deleteRecipe(@PathVariable("recipeId") Long id){
+    public void deleteRecipe(@PathVariable("recipeId") Long id) {
         log.debug("deleted Recipe with id " + id);
         recipeSer.deleteRecipe(id);
     }

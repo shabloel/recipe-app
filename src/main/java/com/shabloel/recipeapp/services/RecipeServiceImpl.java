@@ -34,13 +34,13 @@ public class RecipeServiceImpl implements RecipeService {
     }
 
     @Override
-    public void addNewRecipe(Recipe recipe){
+    public void addNewRecipe(Recipe recipe) {
         recipeRepository.save(recipe);
     }
 
     @Override
-    public void deleteRecipe(Long id){
-        if(!recipeRepository.existsById(id)){
+    public void deleteRecipe(Long id) {
+        if (!recipeRepository.existsById(id)) {
             throw new RecipeNotFoundException("Recipe with id " + id + " does not exists");
         }
         recipeRepository.deleteById(id);

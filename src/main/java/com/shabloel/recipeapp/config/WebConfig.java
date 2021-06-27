@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
-    @Value("/api")
+    @Value("${base.path}")
     private String basePath;
 
     @Value("${allowed.origins}")

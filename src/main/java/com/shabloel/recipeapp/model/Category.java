@@ -13,7 +13,7 @@ import java.util.Set;
 @Data
 @EqualsAndHashCode(exclude = {"recipes"})
 @Entity
-@Table(name="category")
+@Table(name = "category")
 public class Category {
 
     @Id

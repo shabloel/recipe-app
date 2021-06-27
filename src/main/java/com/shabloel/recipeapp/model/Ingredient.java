@@ -10,20 +10,20 @@ import java.math.BigDecimal;
  * @author christiaan.griffioen on feb, 2021
  */
 @Data
-@EqualsAndHashCode(exclude = {"recipe", "unitOfMeasure", })
+@EqualsAndHashCode(exclude = {"recipe", "unitOfMeasure",})
 @Entity
-@Table(name="ingredient")
+@Table(name = "ingredient")
 public class Ingredient {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="ingredient_id")
+    @Column(name = "ingredient_id")
     private Long id;
 
-    @Column(name="description")
+    @Column(name = "description")
     private String description;
 
-    @Column(name="amount")
+    @Column(name = "amount")
     private BigDecimal amount;
 
     @ManyToOne

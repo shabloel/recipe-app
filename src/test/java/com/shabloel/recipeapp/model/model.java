@@ -15,7 +15,7 @@ public class model {
     Category category;
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         category = new Category();
     }
 

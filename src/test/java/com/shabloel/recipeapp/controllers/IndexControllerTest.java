@@ -36,7 +36,7 @@ public class IndexControllerTest {
     @InjectMocks
     RecipeController recipeController;
 
-    Set<Recipe> recipes =  new HashSet<>();
+    Set<Recipe> recipes = new HashSet<>();
 
     @BeforeEach
     public void setUp() throws Exception {
@@ -50,7 +50,7 @@ public class IndexControllerTest {
     }
 
     @Test
-    public void testMockMvc()throws Exception {
+    public void testMockMvc() throws Exception {
         MockMvc mockMvc = MockMvcBuilders.standaloneSetup(recipeController).build();
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
@@ -58,7 +58,7 @@ public class IndexControllerTest {
     }
 
     @Test
-    public void getRecipes() throws Exception{
+    public void getRecipes() throws Exception {
         when(recipeService.getRecipes()).thenReturn(recipes);
         Set<Recipe> recipes = recipeController.getRecipes();
         //verify(model, times(1)).addAttribute(eq("recipes"), setRecipeCaptor.capture());

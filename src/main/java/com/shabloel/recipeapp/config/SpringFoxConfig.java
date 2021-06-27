@@ -19,9 +19,9 @@ import springfox.documentation.service.ApiInfo;
 @EnableSwagger2
 public class SpringFoxConfig {
     @Bean
-    public Docket recipeApi(){
-        return  new Docket(DocumentationType.SWAGGER_2)
-                .select()
+    public Docket recipeApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .select()//gets a Docket instance (ApiSelectorBuilder)
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build()
