@@ -22,7 +22,7 @@ import static org.mockito.Mockito.*;
  * @since :  14-4-2021, wo
  **/
 @ExtendWith(MockitoExtension.class)
-public class services {
+public class RecipeServiceImplTest {
 
     @Mock
     RecipeRepository recipeRepository;

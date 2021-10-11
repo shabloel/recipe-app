@@ -67,6 +67,10 @@ public class Recipe {
             inverseJoinColumns = @JoinColumn(name = "category_id"))
     private Set<Category> categories;
 
+    @ManyToOne
+    @JoinColumn(name="user_id")
+    private User user;
+
     public void setNotes(Notes notes) {
         this.notes = notes;
         notes.setRecipe(this);

@@ -13,6 +13,8 @@ import java.util.Set;
 public interface RecipeService {
     Set<Recipe> getRecipes();
 
+    Recipe getRecipeById(Long id);
+
     void addNewRecipe(Recipe recipe);
 
     void deleteRecipe(Long id);
